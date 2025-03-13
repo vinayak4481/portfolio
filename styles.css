@@ -1,0 +1,107 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #b99d9e, #fad0c4, #fad0c4);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+header {
+    padding: 20px;
+    background: linear-gradient(90deg, #4a4647, #af9ba3);
+    text-align: center;
+    color: white;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    background: linear-gradient(90deg, #42e695, #3bb2b8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #ffd700;
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.project-card {
+    background: linear-gradient(120deg, #f093fb, #f5576c);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.project-card:hover {
+    transform: scale(1.05);
+}
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+.social-links a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+.social-links a:hover {
+    color: #ffd700;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(90deg, #89787b, #896e7a);
+    color: white;
+    font-weight: bold;
+}
+
+/* Light Mode Styles */
+.light-mode {
+    background: linear-gradient(45deg, #ffffff, #f8f9fa) !important;
+    color: #000 !important;
+}
+
+.light-mode nav {
+    background: linear-gradient(90deg, #d4fc79, #96e6a1) !important;
+}
+
+.light-mode .project-card {
+    background: linear-gradient(120deg, #84fab0, #8fd3f4) !important;
+    color: #000 !important;
+}
+
+.light-mode .social-links a {
+    color: #000 !important;
+}
+
+.light-mode .social-links a:hover {
+    color: #ff758c !important;
+}
